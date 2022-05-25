@@ -1,0 +1,330 @@
+@import "../../index.css";
+/* common css */
+.cp {
+    padding: 10px 20px;
+}
+.bg-cust-white {
+    background-color: var(--white);
+}
+/* common css */
+
+
+.dashboard {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.left-col {
+    width: 180px;
+    display: flex;
+    background-color: var(--blue);
+}
+.sidebar {
+    display: flex;
+    flex-grow: 1;
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+.sidebar .sidebar-inner {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+.sidebar .logo > li {
+    color: var(--white);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.right-col {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 180px);
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+.right-col .dashboard-content {
+    position: relative;
+}
+.common-menu .sub-heading {
+    color: var(--lightblue);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.manage {
+    flex-grow: 1;
+}
+
+.list-menu > li > a {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.list-menu > li > a > .svg-inline--fa {
+    margin-right: 10px;
+    width: 20px;
+}
+.user-menu {
+    margin-top: auto;
+}
+.user-menu > .list-menu > li > a {
+    justify-content: space-between;
+}
+.user-menu > .list-menu > li > a > span {
+    width: calc(100% - 35px);
+    max-width: calc(100% - 35px);
+    overflow: hidden;
+}
+.user-menu > .list-menu > li > a > span > span {
+    font-size: 14px;
+    display: block;
+}
+.user-menu > .list-menu > li > a > span > span:last-child {
+    font-size: 12px;
+    word-break: break-all;
+}
+.user-menu > .list-menu > li > a > .svg-inline--fa {
+    margin-right: 0;
+    max-width: 30px;
+    width: 100%;
+    font-size: 25px;
+}
+.add-task {
+    padding: 10px 20px;
+    margin-bottom: 3px;
+    box-shadow: rgb(0 0 0 / 13%) 0px 2px 6px 0px;
+    background-color: #ffffff;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+.add-task > form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-task > form > input {
+    flex-grow: 1;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.add-task > form > input:focus {
+    background-color: var(--lightpink);
+}
+
+.add-task > form > .action-option {
+    display: flex;
+    align-items: center;
+}
+.add-task > form > .action-option > .action {
+    flex-grow: 1;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.add-task > form > .action-option > .action > select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 30px;
+    width: 100%;
+}
+.add-task > form > .action-option > .action > select:focus {
+    background-color: var(--lightpink);
+}
+.add-task > form > .action-option > .action > label {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    z-index: 1;
+}
+.add-task > form > .action-option > .action > .svg-inline--fa {
+    color: var(--gray);
+}
+.add-task > form > .action-option > .timer {
+    max-width: 100px;
+    margin: 0 10px;
+} 
+.add-task > form > .action-option > .timer > p {
+    width: 100%;
+    text-align: center;
+    border: 0;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 15px;
+}
+.add-task > form > .action-option > .timer > p:hover {
+    background-color: var(--lightpink);
+}
+.add-task > form > .action-option > .play > button {
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.add-task > form > .action-option > .play > button:focus {
+    border: 0;
+    outline: 0;
+    background-color: var(--lightpink);
+}
+.add-task > form > .action-option > .play > button.stop > .svg-inline--fa {
+    font-size: 35px;
+    color: var(--red);
+}
+.add-task > form > .action-option > .play > button.play > .svg-inline--fa {
+    font-size: 35px;
+    color: var(--pink);
+}
+.task-list-all {
+    background-color: var(--lightpink);
+    padding: 10px 0px;
+}
+.this-week {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.this-week p {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.project-progress-bar p {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+}
+.project-progress-bar span {
+    display: inline-block;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--green);
+    width: 100%;
+}
+.task-lists .task-list {
+    margin-top: 20px;
+}
+.task-lists .task-list:first-child {
+    margin-top: 0;
+}
+.day-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.day-actions .cust-date-p > p {
+    color: var(--black);
+    font-weight: 700;
+}
+
+.day-actions .cust-time-p {
+    max-width: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cust-time-p .cust-time p {
+    font-weight: 700;
+}
+
+.task-hover-c {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-hover-c:hover {
+    background-color: var(--lightpink);
+}
+.task-hover-c .svg-inline--fa {
+    color: var(--gray);
+}
+.task-hover-c:hover .svg-inline--fa {
+    color: var(--pink);
+}
+.task-hover-g {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-hover-g .svg-inline--fa {
+    color: var(--gray);
+    opacity: 0.7;
+}
+.task-hover-g:hover .svg-inline--fa {
+    opacity: 1;
+}
+
+.bulk-action {
+    padding: 5px 5px 5px 10px;
+}
+.day-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--lightgray);
+}
+.day-task .task-description p {
+    color: var(--black);
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.day-task .task-project {
+    flex-grow: 1;
+}
+.day-task .task-project p {
+    color: var(--green);
+    font-weight: 500;
+    position: relative;
+    padding-left: 15px;
+}
+.day-task .task-project p:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: var(--green);
+    left: 0;
+    top: 8px;
+}
+
+.day-task .task-time-p {
+    max-width: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.day-task .task-time-p .d-n {
+    visibility: hidden;
+}
+.day-task:hover {
+    background-color: var(--lightgray);
+}
+.day-task:hover .task-time-p .d-n {
+    visibility: visible;
+}

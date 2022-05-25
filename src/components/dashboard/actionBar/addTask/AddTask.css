@@ -1,0 +1,86 @@
+@import "../../../../index.css";
+.project-select {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.project-select .svg-inline--fa {
+    margin-right: 10px;
+}
+.project-select-window {
+    position: static;
+    visibility: visible;
+}
+.project-select-window-inner {
+    position: absolute;
+    display: flex;
+    top: 48px;
+    left: -100px;
+    z-index: 2;
+    min-width: 250px;
+    padding: 30px 15px;
+    background-color: var(--white);
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.project-select-window-inner > .select {
+    position: relative;
+}
+.project-select-window-inner > .select select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px 0;
+    padding-left: 30px;
+    width: 100%;
+}
+.project-select-window-inner > .select select:focus {
+    background-color: var(--lightpink);
+}
+.project-select-window-inner > .select label {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    z-index: 1;
+}
+.project-select-window-inner > .select .svg-inline--fa {
+    color: var(--gray);
+}
+.project-overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.create-project {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.create-project .form-control {
+    margin-right: 10px;
+    padding: 2px 10px;
+    height: auto;
+}
+.create-project .btn {
+    padding: 2px 10px;
+    height: auto;
+    flex-grow: 1;
+    text-align: left;
+}
+.create-project-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.create-project-child .btn {
+    text-align: center;
+}
+.create-project-child form {
+    display: flex;
+}

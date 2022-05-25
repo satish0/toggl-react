@@ -1,0 +1,42 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #ebedef;
+}
+
+.login-inner {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    padding: 24px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.form-group {
+    margin-top: 10px;
+    
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    background-color: #321fdb;
+    align-self: stretch;
+    justify-content: center;
+    
+}
+
+.signup h2, .signup p, .signup button {
+
+    color: #ffffff;
+}
